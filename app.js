@@ -14,3 +14,8 @@ function updateProductNumber(product, price, isIncreasing) {
     // calculate total
     calculateTotal();
 }
+function getInputValue(product){
+    const productInput = document.getElementById(product + '-number');
+    const productNumber = parseInt(productInput.value);
+    return productNumber;
+}
